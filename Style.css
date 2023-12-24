@@ -18,7 +18,7 @@ header a{
     color: black;
 }
 header{
-    background-image: url(images/HeaderBG.jpg);
+    background-image: url(images/HeaderBG.png);
     height: 900px;
     width:100%;
     background-position: center;
@@ -303,69 +303,6 @@ main{
 .icons:hover{
     filter: brightness(50%);
 }
-.IslamPillars {
-    background-image: url(images/mosqueBg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    width: 100%;
-    height: auto;
-    padding-bottom: 40px;
-
-/*     margin-top: 90px; */
-}
-.IslamPillars    h1{
-    margin-bottom: 50px;
-    font-size:50px;
-    text-align: center;
-
-}
-.pillars{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.pil{
-    border-radius: 100%;
-    padding: 30px;
-    border: solid 10px var(--oragneColor);
-}
-.pil img{
-    width: 150px;
-}
-.pilftxt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.pilftxt label{
-    font-size:45px;
-    font-weight: bold;
-}
-@media screen and (max-width: 600px){
-    .pil img{
-        width: 80px;
-    }
-    .pilftxt label{
-        font-size:30px;
-        font-weight: bold;
-    }
-    .services{
-        width: 100%;
-        height: 30vw;
-    }
-    
-    .serviceIcons img{
-        
-        width:20vw;
-        height: 18vw;
-    }
-}
 .WhatEvents h1{
     text-align: center;
     margin: 20px 0px;
@@ -374,11 +311,11 @@ main{
 }
 .WhatEvents h3{
     text-align: center;
-    margin-top: 40px;
+    margin-top:2px;
     font-size: 20px;
 }
 .WhatEvents{
-    margin-top:40px;
+
     display: flex;
     flex-direction: column;
     
@@ -456,19 +393,25 @@ main{
 }
 
 .IslamicSec2 .ismalmicI:hover{
-    background-image: url(images/PalastineFree.jpg);
-    filter: brightness(50%);
+    background-image: url(images/RCOY.webp);
+
+    /* filter: brightness(50%); */
+}
+.IslamicSec2 .ismalmicI:hover .events h4{
+    color: #ffffff;
+    font-size: larger;
 }
 @media screen and (max-width: 600px){
     .IslamicSec1 .ismalmicI{
         width: 300px;
         height: 80px;
     }
-    .IslamicSec1 .ismalmicI #nOne{
+    .IslamicSec1 .ismalmicI #nOne,h3{
         display: none;
     }
     .IslamicSec1 .ismalmicI #ntwo{
         display: inline-block;
+        font-size: small;
     }
     .IslamicSec1 img{
         width:170px;
@@ -518,6 +461,8 @@ main{
     scroll-snap-align: start;
     pointer-events: none;
     transition: all 0.1s;
+    border: solid black 1px;
+    box-shadow:3px 3px 10px black;
 
 }
 .Teachers .img2{
@@ -542,7 +487,7 @@ main{
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: X mandatory;
-    height: 70vw;
+    height: 40vw;
     align-items: center;
     transition: all 0.5s;
 }
@@ -575,6 +520,11 @@ main{
     transform: scale(1.1);
     filter: brightness(70%);
         
+    }
+    @media screen and (max-width: 900px){
+        .TechCont{
+            height: 70vw;
+        }
     }
 @media screen and (max-width: 600px){
     .Teachers h1{

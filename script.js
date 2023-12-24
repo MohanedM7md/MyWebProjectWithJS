@@ -78,36 +78,6 @@ arrowGo.forEach(e =>{
            
     })
 }) 
-
-let add = 1
-console.log(allImagesArr)
-swapper.addEventListener('scroll',ChangeMeMiddle);
-Array.from(allImagesArr[add].children)[0].style.transform = "scale(1.1)"
-function ChangeMeMiddle(){
-    if(screen.width > 760){
-        
-        Array.from(allImagesArr[add+1].children)[0].style.boxShadow = "none"
-        Array.from(allImagesArr[add-1].children)[0].style.boxShadow = "none"
-        Array.from(allImagesArr[add-1].children)[0].style.transform = "scale(1)"
-        Array.from(allImagesArr[add+1].children)[0].style.transform = "scale(1)"
-        allImagesArr[add-1].style.zIndex = "-1";
-        allImagesArr[add+1].style.zIndex = "-1";
-        allImagesArr[add].style.zIndex = "1";
-        Array.from(allImagesArr[add].children)[0].style.zIndex = "3";
-        Array.from(allImagesArr[add].children)[0].style.transform = "scale(1.1)"
-        Array.from(allImagesArr[add].children)[0].style.boxShadow = "6px 6px 9px"
-        allImagesArr[add].style.zIndex = "10";
-        add =Math.round(swapper.scrollLeft/(document.querySelector('.img2').offsetWidth+9))+1;
-    }
-        else{
-            Array.from(allImagesArr[add+1].children)[0].style.boxShadow = "none"
-            Array.from(allImagesArr[add-1].children)[0].style.boxShadow = "none"
-            Array.from(allImagesArr[add].children)[0].style.boxShadow = "none"
-            Array.from(allImagesArr[add-1].children)[0].style.transform = "scale(1)"
-            Array.from(allImagesArr[add].children)[0].style.transform = "scale(1)"
-            Array.from(allImagesArr[add+1].children)[0].style.transform = "scale(1)"
-        }
-}
 setInterval(()=>{
     
     swapper.scrollLeft +=(scrollLength+19);
